@@ -1,22 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
-	xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:tools="http://schemas.android.com/tools"
-	android:layout_width="match_parent"
-	android:layout_height="match_parent"
-	tools:context=".MainActivity">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
 
-	<include
-		android:id="@+id/toolbar"
-		layout="@layout/action_bar">
-	</include>
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/action_bar">
+    </include>
 
-	<TextView
-		android:layout_below="@+id/toolbar"
-		android:text="@string/hello_world"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_marginTop="@dimen/TextDimTop"/>
+    <TextView
+        android:layout_below="@+id/toolbar"
+        android:text="@string/hello_world"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/TextDimTop"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00:00.0"
+        android:id="@+id/textView"
+        android:textSize="40sp"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentEnd="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:id="@+id/button"
+            android:layout_weight="1"
+            android:onClick="onStartButtonClick" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:id="@+id/button2"
+            android:layout_weight="1"
+            android:onClick="onResetButtonClick" />
+
+    </LinearLayout>
 
 </RelativeLayout>
 
