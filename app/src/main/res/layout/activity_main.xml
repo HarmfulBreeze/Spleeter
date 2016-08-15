@@ -12,19 +12,12 @@
     </include>
 
     <TextView
-        android:layout_below="@+id/toolbar"
-        android:text="@string/hello_world"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/TextDimTop"/>
-
-    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="00:00:00.0"
         android:id="@+id/textView"
         android:textSize="40sp"
-        android:layout_above="@+id/linearLayout"
+        android:layout_above="@+id/buttonBar"
         android:layout_alignParentEnd="true" />
 
     <LinearLayout
@@ -33,7 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:id="@+id/linearLayout">
+        android:id="@+id/buttonBar">
 
         <Button
             android:layout_width="wrap_content"
